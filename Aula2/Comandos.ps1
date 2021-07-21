@@ -83,11 +83,7 @@ function TestarFuncaoGetMember {
     Write-Output "Testando a função Get-Member"
     Write-Output ""
 
-    $membros = Get-Member -InputObject $env:Path
-
-    foreach ($membro in $membros) {
-        Write-Output $membro
-    }
+    Get-Member -InputObject $env:Path
     Write-Output ""
 
     Write-Output "----------------------------------------------------------------------------------------------------------------------"
@@ -99,32 +95,65 @@ function TestarFuncaoGetAlias {
     Write-Output ""
 
     Write-Output "Mostrando todos os alias:"
-    $todosAlias = Get-Alias
-    foreach ($alias in $todosAlias) {
-        Write-Output $alias.DisplayName
-        Write-Output ""
-    }
+    Write-Output ""
+    Get-Alias
     Write-Output ""
 
     Write-Output "Mostrando os alias que mais utilizo:"
-    Write-Output ""
-    Write-Output (Get-Alias -Name "ls").DisplayName
-    Write-Output ""
-    Write-Output (Get-Alias -Name "dir").DisplayName
-    Write-Output ""
-    Write-Output (Get-Alias -Name "cd").DisplayName
-    Write-Output ""
-    Write-Output (Get-Alias -Name "rm").DisplayName
-    Write-Output ""
-    Write-Output (Get-Alias -Name "clear").DisplayName
-    Write-Output ""
-    Write-Output (Get-Alias -Name "cp").DisplayName
-    Write-Output ""
-    Write-Output (Get-Alias -Name "mv").DisplayName
-    Write-Output ""
+    Get-Alias -Name "ls"
+    Get-Alias -Name "dir"
+    Get-Alias -Name "cd"
+    Get-Alias -Name "rm"
+    Get-Alias -Name "clear"
+    Get-Alias -Name "cp"
+    Get-Alias -Name "mv"
 
     Write-Output "----------------------------------------------------------------------------------------------------------------------"
     
+}
+
+function TestarFuncaoGetCommand {
+    Write-Output "Testando a função Get-Command"
+    Write-Output ""
+
+    Write-Output "Get-Command com parâmetro -Verb ""*rename*"""
+    Get-Command -Verb "*rename*"
+    Write-Output ""
+
+    Write-Output "----------------------------------------------------------------------------------------------------------------------"
+}
+
+function TestarFuncaoGetHelp {
+    Write-Output "Testando a função Get-Help"
+    Write-Output ""
+
+    Write-Output "Get-Help com parâmetro -Name ""Rename-Item"""
+    Get-Help -Name "Rename-Item"
+    Write-Output ""
+
+    Write-Output "----------------------------------------------------------------------------------------------------------------------"
+}
+
+function TestarParametroWhatIf {
+    Write-Output "Testando o parâmetro -WhatIf"
+    Write-Output ""
+
+    Write-Output "Rename-Item com o parâmetro -WhatIf"
+    Rename-Item -Path "a.bat" -NewName "a_migrando_Henrique.bat" -WhatIf
+    Write-Output ""
+
+    Write-Output "----------------------------------------------------------------------------------------------------------------------"
+}
+
+function TestarFuncaoUpdateHelp {
+    
+    Write-Output "Testando a função Update-Help"
+    Write-Output ""
+
+    Update-Help
+    Write-Output ""
+
+    Write-Output "----------------------------------------------------------------------------------------------------------------------"
 }
 
 function  Main {
@@ -132,7 +161,11 @@ function  Main {
     TestarFuncaoGetType
     MostrarVariavelPath 
     TestarFuncaoGetMember 
-    TestarFuncaoGetAlias 
+    TestarFuncaoGetAlias
+    TestarFuncaoGetCommand
+    TestarFuncaoGetHelp
+    TestarParametroWhatIf
+    TestarFuncaoUpdateHelp
 }
 
 Main
