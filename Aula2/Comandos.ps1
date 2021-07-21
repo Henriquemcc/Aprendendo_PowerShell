@@ -93,11 +93,46 @@ function TestarFuncaoGetMember {
     Write-Output "----------------------------------------------------------------------------------------------------------------------"
 }
 
+function TestarFuncaoGetAlias {
+    
+    Write-Output "Testando a função Get-Alias"
+    Write-Output ""
+
+    Write-Output "Mostrando todos os alias:"
+    $todosAlias = Get-Alias
+    foreach ($alias in $todosAlias) {
+        Write-Output $alias.DisplayName
+        Write-Output ""
+    }
+    Write-Output ""
+
+    Write-Output "Mostrando os alias que mais utilizo:"
+    Write-Output ""
+    Write-Output (Get-Alias -Name "ls").DisplayName
+    Write-Output ""
+    Write-Output (Get-Alias -Name "dir").DisplayName
+    Write-Output ""
+    Write-Output (Get-Alias -Name "cd").DisplayName
+    Write-Output ""
+    Write-Output (Get-Alias -Name "rm").DisplayName
+    Write-Output ""
+    Write-Output (Get-Alias -Name "clear").DisplayName
+    Write-Output ""
+    Write-Output (Get-Alias -Name "cp").DisplayName
+    Write-Output ""
+    Write-Output (Get-Alias -Name "mv").DisplayName
+    Write-Output ""
+
+    Write-Output "----------------------------------------------------------------------------------------------------------------------"
+    
+}
+
 function  Main {
     TestarCommandPrecedence
     TestarFuncaoGetType
     MostrarVariavelPath 
-    TestarFuncaoGetMember  
+    TestarFuncaoGetMember 
+    TestarFuncaoGetAlias 
 }
 
 Main
