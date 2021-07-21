@@ -1,8 +1,8 @@
-Write-Host "Obtendo o serviço de audio do Windows ""AudioSrv""..."
+Write-Output "Obtendo o serviço de audio do Windows ""AudioSrv""..."
 $servico = Get-Service -Name "AudioSrv"
 
-Write-Host "Parando o serviço ""AudioSrv""..."
+Write-Output "Parando o serviço ""AudioSrv""..."
 $servico.Stop()
 
-Write-Host "Iniciando o serviço ""AudioSrv""..."
+Write-Output "Iniciando o serviço ""AudioSrv""..."
 $servico.Start()
