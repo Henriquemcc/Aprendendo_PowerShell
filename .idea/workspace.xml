@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="" />
+    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Parte 8 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +93,70 @@
       <option name="project" value="LOCAL" />
       <updated>1626906618872</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adicionando as configurações do IntelliJ no projeto.">
+      <created>1626907310318</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907310318</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Parte 3 da aula 1 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1626907405640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907405640</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Parte 5 da aula 1 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1626907484780</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907484781</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Parte 7 da aula 1 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1626907553751</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907553751</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Parte 2 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1626907628236</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907628236</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Substituindo o comando Write-Host para Write-Output.">
+      <created>1626907670288</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907670288</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Partes 2 e 3 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1626907725894</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907725894</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Parte 6 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1626907775273</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907775273</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Parte 8 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1626907826327</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626907826327</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -128,11 +191,16 @@
     <MESSAGE value="Adicionando a pasta de configurações do projeto do IntelliJ." />
     <MESSAGE value="Alterando o README.md e o README.EN.md." />
     <MESSAGE value="Alterando configurações do IntelliJ para o projeto." />
+    <MESSAGE value="Adicionando as configurações do IntelliJ no projeto." />
     <MESSAGE value="Parte 3 da aula 1 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
     <MESSAGE value="Parte 5 da aula 1 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
     <MESSAGE value="Parte 7 da aula 1 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
     <MESSAGE value="Parte 2 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 2 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <MESSAGE value="Substituindo o comando Write-Host para Write-Output." />
+    <MESSAGE value="Partes 2 e 3 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <MESSAGE value="Parte 6 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <MESSAGE value="Parte 8 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <option name="LAST_COMMIT_MESSAGE" value="Parte 8 da aula 2 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
