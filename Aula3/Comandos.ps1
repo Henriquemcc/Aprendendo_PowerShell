@@ -38,9 +38,37 @@ function TestarCriacaoArquivoProfileCurrentUserCurrentHost {
     Write-Host "----------------------------------------------------------------------------------------------------------------------"
 }
 
+function MostrarPoliticaDeExecucao {
+    Write-Host "Mostrando a política de execução"
+    Write-Host ""
+
+    Write-Host "Política de Execução atual:"
+    Get-ExecutionPolicy
+    Write-Host ""
+
+    Write-Host "----------------------------------------------------------------------------------------------------------------------"
+}
+
+function AlterarPoliticaDeExecucao {
+    Write-Host "Alterando a política de execução"
+    Write-Host ""
+
+    try {
+        Start-Process -FilePath "powershell" -ArgumentList "Set-ExecutionPolicy Unrestricted" -Verb RunAs
+    }
+    catch {
+        Write-Error $_
+    }
+    Write-Host ""
+
+    Write-Host "----------------------------------------------------------------------------------------------------------------------"
+}
+
 function Main {
     MostrarValorVariavelDeAmbienteProfile
     TestarCriacaoArquivoProfileCurrentUserCurrentHost
+    MostrarPoliticaDeExecucao
+    AlterarPoliticaDeExecucao
 }
 
 Main
