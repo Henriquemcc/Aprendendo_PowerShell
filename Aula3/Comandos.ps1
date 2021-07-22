@@ -64,11 +64,41 @@ function AlterarPoliticaDeExecucao {
     Write-Host "----------------------------------------------------------------------------------------------------------------------"
 }
 
+function TestarCriacaoArquivoProfileAllUsersAllHosts {
+    Write-Host "Testando a criação do arquivo profile do PowerShell AllUsersAllHosts"
+    Write-Host ""
+
+    Write-Host "Verificando se o arquivo profile de AllUsersAllHosts existe"
+
+    if ([System.IO.File]::Exists($profile.AllUsersAllHosts)) {
+        Write-Host "O arquivo $($profile.AllUsersAllHosts) já existe"
+    }
+    else {
+
+        $criarArquivo = ""
+        do {
+            Write-Host "O arquivo $($profile.AllUsersAllHosts) não existe"
+            $criarArquivo = (Read-Host -Prompt "Gostaria de cria-lo? (s/n) ").ToLower()[0]
+        }
+        while ($criarArquivo -ne 's' -and $criarArquivo -ne 'n')
+
+        if ($criarArquivo -eq 's') {
+            Write-Host "Criando o arquivo $($profile.AllUsersAllHosts)..."
+            Start-Process -FilePath "powershell" -ArgumentList "New-Item -Path $($profile.AllUsersAllHosts)" -Verb RunAs
+            Write-Host "Editando o arquivo com o NotePad..."
+            Start-Process -FilePath "notepad.exe" -ArgumentList $profile.AllUsersAllHosts -Verb RunAs
+        }
+    }
+    Write-Host ""
+    Write-Host "----------------------------------------------------------------------------------------------------------------------"
+}
+
 function Main {
     MostrarValorVariavelDeAmbienteProfile
     TestarCriacaoArquivoProfileCurrentUserCurrentHost
     MostrarPoliticaDeExecucao
     AlterarPoliticaDeExecucao
+    TestarCriacaoArquivoProfileAllUsersAllHosts
 }
 
 Main
