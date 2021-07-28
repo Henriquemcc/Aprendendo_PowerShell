@@ -33,11 +33,11 @@ function ListandoOsItensDaPastaScripts {
     Write-Host "Não foi possível mostrar o campo 'Length' pois ele foi filtrado e descartado pelo 'Select-Object -Property Name'."
     Write-Host
 
-    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente que sejam parecidos com '*_migrando_*'"
+    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente cujo nome seja parecido com '*_migrando_*'"
     Get-ChildItem -Path $pastaScripts -Recurse -File | Where-Object -Property Name -Like "*_migrando_*" | Select-Object -Property Name, Length
     Write-Host
 
-    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente que sejam parecidos com '*_migrando_*' (outra forma)"
+    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente cujo nome seja parecido com '*_migrando_*' (outra forma)"
     $arquivosRecursivosDaPasta = Get-ChildItem -Path $pastaScripts -Recurse -File
     foreach ($arquivo in $arquivosRecursivosDaPasta) {
         if ($arquivo.Name -like "*_migrando_*") {
@@ -46,13 +46,26 @@ function ListandoOsItensDaPastaScripts {
     }
     Write-Host
 
-    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente que sejam parecidos com '*_migrando_*' (outra forma)"
+    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente cujo nome seja parecido com '*_migrando_*' (outra forma)"
     $arquivosRecursivosDaPasta = Get-ChildItem -Path $pastaScripts -Recurse -File
     foreach ($arquivo in $arquivosRecursivosDaPasta) {
         if ($arquivo.Name -like "*_migrando_*") {
             Select-Object -InputObject $arquivo -Property Name, Length
         }
     }
+    Write-Host
+
+    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente cujo nome seja parecido com '*_migrando_* e dividindo o length por 1 KB"
+    Get-ChildItem -Path $pastaScripts -Recurse -File | Where-Object -Property Name -Like "*_migrando_*" | Select-Object -Property Name, Length / 1KB
+    Write-Host "Não foi possível mostar o atrbuto Lenght pois o PowerShell interpretou que a string resultante de 'Get-ChildItem -Path $`pastaScripts -Recurse -File | Where-Object -Property Name -Like ""*_migrando_*"" | Select-Object -Property Name, Length' seria dividia por 1KB o que resultou em um erro."
+    Write-Host
+
+    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente cujo nome seja parecido com '*_migrando_* e dividindo o length por 1 KB"
+    Get-ChildItem -Path $pastaScripts -Recurse -File | Where-Object -Property Name -Like "*_migrando_*" | Select-Object -Property Name, { $_.Length / 1KB }
+    Write-Host
+
+    Write-Host "Mostrando os campos 'Name' e 'Length' dos arquivos recursivemente cujo nome seja parecido com '*_migrando_* e dividindo o length por 1 KB formatados"
+    Get-ChildItem -Path $pastaScripts -Recurse -File | Where-Object -Property Name -Like "*_migrando_*" | Select-Object -Property Name, { "{0:N2}KB" -f ($_.Length / 1KB) }
     Write-Host
 
     Write-Host "----------------------------------------------------------------------------------------------------------------------"
