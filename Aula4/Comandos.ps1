@@ -54,10 +54,53 @@ function ListandoOsItensDaPastaScripts {
         }
     }
     Write-Host
+
+    Write-Host "----------------------------------------------------------------------------------------------------------------------"
+}
+
+function ConvertendoBytesEFormatandoNumeros {
+    Write-Host "Convertendo Bytes e formatando números"
+    Write-Host
+
+    Write-Host "Dividindo números:"
+    1376 / 1024
+    Write-Host
+    
+    Write-Host "Utilizando especificadores de bytes:"
+    123kb
+    Write-Host
+
+    Write-Host "Dividindo números por especificadores de bytes:"
+    5445644654 / 1GB
+    Write-Host
+
+    Write-Host "Obtendo o tipo do resultado da divisão:"
+    (5445644654 / 1GB).GetType().Name
+    Write-Host
+
+    Write-Host "Convertendo o tipo double para uma string com formatação:"
+    (5445644654 / 1GB).ToString("N2")
+    Write-Host "O N significa numeric (númerico). O 2 após o N é o número de casas decimais após a vírgula. Mais informações: https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings#the-numeric-n-format-specifier"
+    Write-Host
+
+    Write-Host "Adicionando a unidade de medida no final da string:"
+    (5445644654 / 1GB).ToString("N2") + "GB"
+    Write-Host
+
+    Write-Host "Utilizando o operador de formatação:"
+    "{0:N2}" -f (5445644654 / 1GB)
+    Write-Host
+
+    Write-Host "Adicionando a unidade de medida no final da string com o operador de formatação:"
+    "{0:N2}GB" -f (5445644654 / 1GB)
+    Write-Host
+    
+    Write-Host "----------------------------------------------------------------------------------------------------------------------"
 }
 
 function Main {
     ListandoOsItensDaPastaScripts
+    ConvertendoBytesEFormatandoNumeros
 }
 
 Main
