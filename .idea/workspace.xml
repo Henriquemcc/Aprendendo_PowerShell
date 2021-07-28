@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Parte 2 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Adicionando as configurações do IntelliJ no projeto." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +248,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627504175065</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Parte 4 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1627507016004</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1627507016004</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Adicionando as configurações do IntelliJ no projeto.">
+      <created>1627507032445</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1627507032445</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -294,9 +308,10 @@
     <MESSAGE value="Alterando o README.md e o README.EN.md." />
     <MESSAGE value="Parte 2 da aula 3 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
     <MESSAGE value="Parte 6 da aula 3 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
-    <MESSAGE value="Adicionando as configurações do IntelliJ no projeto." />
     <MESSAGE value="Parte 2 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 2 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <MESSAGE value="Parte 4 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <MESSAGE value="Adicionando as configurações do IntelliJ no projeto." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando as configurações do IntelliJ no projeto." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
