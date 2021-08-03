@@ -22,7 +22,7 @@ The courses in which these files were developed:
 ## PowerShell + Jupyter Notebook
 
 Some files developed during the classes were moved to Jupyter Notebooks with PowerShell Kernel. To use Jupyter Notebooks
-with PowerShell Kernel, follow this steps:
+with PowerShell Kernel, follow those steps:
 
 ### 1 - Check if Python3 is installed on your machine:
 
