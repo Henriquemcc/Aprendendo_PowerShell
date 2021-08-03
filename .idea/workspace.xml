@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Migrando os comandos da aula 4 de ps1 para Jupyter Notebooks + PowerShell.">
-      <change afterPath="$PROJECT_DIR$/Aula4/.ipynb_checkpoints/Comandos-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Aula4/Comandos.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula4/Comandos.ps1" beforeDir="false" />
+    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Adicionando configurações do IntelliJ.">
+      <change beforePath="$PROJECT_DIR$/Aula4/.ipynb_checkpoints/Comandos-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Aula4/.ipynb_checkpoints/Comandos-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aula4/Comandos.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Aula4/Comandos.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627990976734</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Migrando os comandos da aula 4 de ps1 para Jupyter Notebooks + PowerShell.">
+      <created>1627991097345</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1627991097345</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Adicionando configurações do IntelliJ.">
+      <created>1627991108335</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1627991108335</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -380,9 +393,9 @@
     <MESSAGE value="Migrando os comandos da aula 2 de ps1 para Jupyter Notebooks + PowerShell." />
     <MESSAGE value="Migrando os comandos da aula 3 de ps1 para Jupyter Notebooks + PowerShell." />
     <MESSAGE value="Corrigindo o README.EN.md." />
-    <MESSAGE value="Adicionando configurações do IntelliJ." />
     <MESSAGE value="Migrando os comandos da aula 4 de ps1 para Jupyter Notebooks + PowerShell." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrando os comandos da aula 4 de ps1 para Jupyter Notebooks + PowerShell." />
+    <MESSAGE value="Adicionando configurações do IntelliJ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando configurações do IntelliJ." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
