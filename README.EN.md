@@ -40,11 +40,11 @@ Example:
 Python 3.9.6
 ```
 
-If Python3 is not installed, if you are using Windows 10, the Microsoft Store will be opened in the Python page, you
-just need to click in 'get' to Python be installed on your machine.
+If Python 3 is not installed:
 
-If you are not using Windows 10 or Microsoft Store's Python page does not appear, download Python from this
-website: [https://www.python.org/downloads/](https://www.python.org/downloads/).
+On Windows 10 you can download Python from [Microsoft Store](https://www.microsoft.com/store/productId/9P7QFQMJRFP7).
+
+In any other versions or if you prefer, you can download from [Python website](https://www.python.org/downloads/).
 
 ### 2 - Install Jupyter Notebooks
 
