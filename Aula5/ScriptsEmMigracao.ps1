@@ -24,5 +24,19 @@ $resultado = Get-ChildItem -Path $pastaScripts -Recurse -File |
         Where-Object -Property Name -Like "*_migrando_*" |
         Select-Object -Property $parameters
 
-# Mostrando o valor da variável
-$resultado
+# Lendo o arquivo styles.css
+$estilos = Get-Content ..\styles.css
+
+# Criando a tag style
+$styleTag = "<style> $estilos </style>"
+
+# Criando o título da página
+$tituloPagina = "Relatorio de Scripts em Migracao"
+
+# Criando o título em HTML para ser colocado na tag body
+$tituloBody = "<h1> $tituloPagina </h1>"
+
+# Convertendo para HTML
+$resultado |
+        ConvertTo-Html -Head $styleTag -Title $tituloPagina -Body $tituloBody |
+        Out-File .\Relatorio.html
