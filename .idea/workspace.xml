@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Adicionando a pasta de configurações do projeto do IntelliJ." />
+    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Adicionando a pasta de configurações do projeto do IntelliJ.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,20 +57,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626905276495</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Adicionando a pasta de configurações do projeto do IntelliJ.">
-      <created>1626905475437</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1626905475437</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Alterando configurações do IntelliJ para o projeto.">
-      <created>1626905920061</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1626905920061</updated>
     </task>
     <task id="LOCAL-00003" summary="Parte 3 da aula 1 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
       <created>1626906438332</created>
@@ -399,7 +387,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628000875988</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Parte 10 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1628001448801</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1628001448802</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Adicionando a pasta de configurações do projeto do IntelliJ.">
+      <created>1628001473244</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1628001473245</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
