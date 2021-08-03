@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Parte 10 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula4/.ipynb_checkpoints/Comandos-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Aula4/.ipynb_checkpoints/Comandos-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula4/Comandos.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Aula4/Comandos.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="ba85ff69-a80a-4201-aba8-b67ff10eb0fd" name="Default Changelist" comment="Adicionando a pasta de configurações do projeto do IntelliJ." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -389,7 +385,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627999836589</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Parte 10 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna.">
+      <created>1628000847236</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1628000847236</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Adicionando a pasta de configurações do projeto do IntelliJ.">
+      <created>1628000875988</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1628000875988</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -444,9 +454,9 @@
     <MESSAGE value="Alterando o README.md." />
     <MESSAGE value="Alterando o README.EN.md." />
     <MESSAGE value="Parte 8 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
-    <MESSAGE value="Adicionando a pasta de configurações do projeto do IntelliJ." />
     <MESSAGE value="Parte 10 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 10 da aula 4 do curso PowerShell parte 1: Começando com a linguagem de scripting moderna." />
+    <MESSAGE value="Adicionando a pasta de configurações do projeto do IntelliJ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando a pasta de configurações do projeto do IntelliJ." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
