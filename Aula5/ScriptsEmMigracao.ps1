@@ -1,3 +1,5 @@
+param($tipoDeExportacao)
+
 # Alterando a variável $ErrorActionPreference para que 
 $ErrorActionPreference = "Stop"
 
@@ -24,19 +26,32 @@ $resultado = Get-ChildItem -Path $pastaScripts -Recurse -File |
         Where-Object -Property Name -Like "*_migrando_*" |
         Select-Object -Property $parameters
 
-# Lendo o arquivo styles.css
-$estilos = Get-Content ..\styles.css
+if ($tipoDeExportacao -eq "HTML")
+{
+    # Lendo o arquivo styles.css
+    $estilos = Get-Content ..\styles.css
 
-# Criando a tag style
-$styleTag = "<style> $estilos </style>"
+    # Criando a tag style
+    $styleTag = "<style> $estilos </style>"
 
-# Criando o título da página
-$tituloPagina = "Relatorio de Scripts em Migracao"
+    # Criando o título da página
+    $tituloPagina = "Relatorio de Scripts em Migracao"
 
-# Criando o título em HTML para ser colocado na tag body
-$tituloBody = "<h1> $tituloPagina </h1>"
+    # Criando o título em HTML para ser colocado na tag body
+    $tituloBody = "<h1> $tituloPagina </h1>"
 
-# Convertendo para HTML
-$resultado |
-        ConvertTo-Html -Head $styleTag -Title $tituloPagina -Body $tituloBody |
-        Out-File .\Relatorio.html
+    # Convertendo para HTML
+    $resultado |
+            ConvertTo-Html -Head $styleTag -Title $tituloPagina -Body $tituloBody |
+            Out-File .\Relatorio.html
+}
+
+elseif ($tipoDeExportacao -eq "JSON")
+{
+    $resultado | ConvertTo-Json | Out-File .\Relatorio.json
+}
+
+elseif ($tipoDeExportacao -eq "CSV")
+{
+    $resultado | ConvertTo-Csv -NoTypeInformation | Out-File .\Relatorio.csv
+}
